@@ -28,9 +28,9 @@ export default class HomeScreen extends React.Component {
                 Paradise
               </Text>
               <Text></Text>
-              <View style={styles.quote}>
-                <Text>“Where there’s discomfort, there’s fear. In these very tough positions, you’re in a little piece of hell. And through this daily suffering, you learn to survive in these situations. You have to find comfort in the uncomfortable situations. You have to be able to live your worst nightmare. Jiu-Jitsu puts you completely in the moment where you must have complete focus on finding a solution to the problem. This trains the mind to build that focus, to increase your awareness, your capacity to solve problems. Sometimes, you don’t have to win. You cannot win. But that has nothing to do with losing.”</Text>
-                <Text>-Rickson Gracie</Text>
+              <View>
+                <Text style={styles.quote}>“Where there’s discomfort, there’s fear. In these very tough positions, you’re in a little piece of hell. And through this daily suffering, you learn to survive in these situations. You have to find comfort in the uncomfortable situations. You have to be able to live your worst nightmare. Jiu-Jitsu puts you completely in the moment where you must have complete focus on finding a solution to the problem. This trains the mind to build that focus, to increase your awareness, your capacity to solve problems. Sometimes, you don’t have to win. You cannot win. But that has nothing to do with losing.”</Text>
+                <Text style={styles.quote}>-Rickson Gracie</Text>
               </View>
             </View>
           </ScrollView>
@@ -81,7 +81,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#AA6C39',
   },
   quote: {
-    color: '#242424'
+    color: '#242424',
+    textShadowColor: 'rgba(0,0,0,0.4)',
+    textShadowOffset: {width: 1, height: 2},
+    textShadowRadius: 10
   },
   developmentModeText: {
     marginBottom: 20,
@@ -113,6 +116,9 @@ const styles = StyleSheet.create({
     color: '#BCAEA3',
     lineHeight: 35,
     textAlign: 'center',
+    textShadowColor: '#242424',
+    textShadowOffset: {width: 1, height: 2},
+    textShadowRadius: 10
   },
   tabBarInfoContainer: {
     position: 'absolute',
