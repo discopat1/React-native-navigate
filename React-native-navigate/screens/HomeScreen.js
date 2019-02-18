@@ -21,13 +21,14 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
         <View style={styles.container}>
+        <View style={styles.getStartedContainer}>
+          <Text style={styles.getStartedText}>Grappler's</Text>
+          <Text style={styles.getStartedText}>
+            Paradise
+          </Text>
+        </View>
           <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-            <View style={styles.getStartedContainer}>
-              <Text style={styles.getStartedText}>Grappler's</Text>
-              <Text style={styles.getStartedText}>
-                Paradise
-              </Text>
-              <Text></Text>
+            <View style={styles.quoteContainer}>
               <View>
                 <Text style={styles.quote}>“Where there’s discomfort, there’s fear. In these very tough positions, you’re in a little piece of hell. And through this daily suffering, you learn to survive in these situations. You have to find comfort in the uncomfortable situations. You have to be able to live your worst nightmare. Jiu-Jitsu puts you completely in the moment where you must have complete focus on finding a solution to the problem. This trains the mind to build that focus, to increase your awareness, your capacity to solve problems. Sometimes, you don’t have to win. You cannot win. But that has nothing to do with losing.”</Text>
                 <Text style={styles.quote}>-Rickson Gracie</Text>
@@ -86,6 +87,10 @@ const styles = StyleSheet.create({
     textShadowOffset: {width: 1, height: 2},
     textShadowRadius: 10
   },
+  quoteContainer: {
+    alignItems: 'center',
+    marginHorizontal: 50,
+  },
   developmentModeText: {
     marginBottom: 20,
     color: 'rgba(0,0,0,0.4)',
@@ -99,6 +104,7 @@ const styles = StyleSheet.create({
   getStartedContainer: {
     alignItems: 'center',
     marginHorizontal: 50,
+    marginTop: 50,
   },
   homeScreenFilename: {
     marginVertical: 7,
