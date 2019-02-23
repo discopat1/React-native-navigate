@@ -5,19 +5,25 @@ import { Constants, Location, Permissions } from 'expo';
 import openMap from 'react-native-open-maps';
 
 import MapView from 'react-native-maps'
-export default class App extends Component<Props> {
+export default class App extends Component {
   render() {
     return (
       <MapView
         style={{flex: 1}}
         region={{
-          latitude: 42.882004,
-          longitude: 74.582748,
+          latitude: 37,
+          longitude: -122,
           latitudeDelta: 0.0922,
           longitudeDelta: 0.0421
         }}
-        showsUserLocation={true}
-      />
+        showsUserLocation={true}>
+        <MapView.Marker
+        coordinate={{
+          latitude: 37,
+          longitude: -122
+        }}
+        />
+      </MapView>
     );
   }
 }
