@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Alert, Text, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
 import styles from './styles';
+import { WebBrowser } from 'expo';
 
 export default class Button extends Component {
     _onPressButton() {
-      Alert.alert('You tapped the button!')
+      WebBrowser.openBrowserAsync('https://www.google.com/search?q=find+grappling+schools+nearby&oq=find+grappling+schools+nearby&aqs=chrome..69i57.9978j0j8&sourceid=chrome&ie=UTF-8');
     }
   
   

@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import { Text, View, StyleSheet, ScrollView } from 'react-native';
-import { Constants, WebBrowser } from 'expo';
+import React from 'react';
+import { Text, View, ScrollView } from 'react-native';
 import VideoLinks from '../components/VideoLinks';
 import Button from '../components/Button';
 import styles from './styles';
